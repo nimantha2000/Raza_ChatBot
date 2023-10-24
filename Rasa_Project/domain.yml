@@ -1,0 +1,59 @@
+version: "3.1"
+
+intents:
+  - greeting
+  - goodbye
+  - thanks
+  - ceb_intro
+  - ceb_services
+  - ceb_contact
+  - ceb_bill
+  - ceb_outages
+  - ceb_import
+  - respond_name
+
+responses:
+  utter_greeting:
+  - text: "Hello! How can I assist you today?"
+
+  utter_goodbye:
+  - text: "Goodbye! Have a great day!"
+
+  utter_thanks:
+  - text: "You're welcome! If you have more inquiries, let me know."
+
+  utter_intro:
+  - text: "The Ceylon Electricity Board (CEB) is the state-owned electricity utility in Sri Lanka.It is responsible for the generation, transmission, distribution, and sale of electricity throughout the country. The CEB was established in 1969 under the Ceylon Electricity Board Act No. 17 of 1969, and it is governed by a Board of Directors appointed by the Minister of Power and Energy"
+
+  utter_ceb_services:
+  - text: "CEB offers a range of services including electricity supply, billing, new connections, energy efficiency programs, and more."
+
+  utter_ceb_contact:
+  - text: "To reach CEB's customer service, you can call us at [phone number] or send an email to [email address]. Additional contact information is available on our official website."
+
+  utter_ceb_bill:
+  - text: "CEB bills are calculated based on your electricity consumption and the tariff rates. The bill includes charges for energy usage, fixed charges, taxes, and any applicable subsidies."
+
+
+  utter_outage_map:
+  - text: "You can check for current power outages on the [CEB Outage Map](https://cebcare.ceb.lk/Incognito/OutageMap)."
+
+
+
+  utter_ceb_import:
+  - text: "Electricity imports play a crucial role in ensuring a reliable energy supply. They are obtained through agreements with neighboring countries."
+
+
+
+  utter_respond_name:
+    - text: "My name is CEB DIGITAL ASSISTANT."
+    - text: "You can call me CEB DIGITAL ASSISTANT."
+    - text: "I'm CEB DIGITAL ASSISTANT, nice to meet you!"
+    - text: "I go by the name CEB DIGITAL ASSISTANT."
+
+
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+

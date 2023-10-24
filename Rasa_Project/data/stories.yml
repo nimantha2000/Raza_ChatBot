@@ -1,0 +1,85 @@
+version: "3.1"
+
+stories:
+
+- story: happy path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_happy
+
+- story: sad path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+- story: sad path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_goodbye
+
+- story: CEB introduction
+  steps:
+  - intent: ceb_intro
+  - action: utter_ceb_intro
+
+- story: CEB services
+  steps:
+  - intent: ceb_services
+  - action: utter_ceb_services
+
+- story: CEB contact
+  steps:
+  - intent: ceb_contact
+  - action: utter_ceb_contact
+
+- story: CEB bill
+  steps:
+  - intent: ceb_bill
+  - action: utter_ceb_bill
+
+- story: User checks power outages
+  steps:
+  - intent: ceb_outages
+  - action: utter_ceb_outages_website
+
+- story: CEB import
+  steps:
+  - intent: ceb_import
+  - action: utter_ceb_import
+
+- story: Ask about CEB
+  steps:
+    - intent: ask_about_ceb
+    - action: action_web_scrape_ceb_info
+
+- story: Get CEB location
+  steps:
+    - intent: get_ceb_location
+    - action: action_web_scrape_ceb_location
+
+- story: Get CEB history
+  steps:
+    - intent: get_ceb_history
+    - action: action_web_scrape_ceb_history
+
+- story: Get CEB CEO
+  steps:
+    - intent: get_ceb_ceo
+    - action: action_web_scrape_ceb_ceo
+
+- story: ask name
+  steps:
+  - intent: ask_name
+  - action: utter_respond_name

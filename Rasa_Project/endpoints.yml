@@ -1,0 +1,37 @@
+# This file contains the different endpoints your bot can use.
+
+models:
+  url: http://my-server.com/models/default_core@latest
+  wait_time_between_pulls: 10   # [optional](default: 100)
+
+action_endpoint:
+  url: "http://localhost:5055/webhook"
+
+actions:
+  - actions.get_web_data
+
+
+knowledge_base:
+    url: "https://www.ceb.lk/api/kb"
+
+
+tracker_store_redis:
+  type: redis
+  url: localhost
+  port: 6379
+  db: 0
+  password: ""
+  use_ssl: false
+
+tracker_store_mongod:
+  type: mongod
+  url: mongodb://localhost:27017
+  db: rasa
+  username: ""
+  password: ""
+
+event_broker:
+  url: localhost
+  username: username
+  password: password
+  queue: queue

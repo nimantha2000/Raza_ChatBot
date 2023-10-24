@@ -1,0 +1,139 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+- intent: goodbye
+  examples: |
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremely sad
+    - so saad
+    - so sad
+
+
+
+- intent: ceb_intro
+  examples: |
+    - Tell me about Ceylon Electricity Board?
+    - What is CEB?
+    - Give me an overview of Ceylon Electricity Board 
+
+- intent: ceb_services
+  examples: |
+    - What services does Ceylon Electricity Board provide?
+    - Tell me about CEB's services
+    - What can I do with Ceylon Electricity Board?
+
+- intent: ceb_contact
+  examples: |
+    - How can I contact Ceylon Electricity Board?
+    - Give me CEB's contact information
+    - How do I reach CEB's customer service?
+
+- intent: ceb_bill
+  examples: |
+    - Tell me about CEB electricity bills
+    - How are CEB bills calculated?
+    - Explain my electricity bill
+
+- intent: ceb_outages
+  examples: |
+    - Are there any planned power outages?
+    - Tell me about current power outages
+    - Is there a power outage in my area?
+
+- intent: ceb_import
+  examples: |
+    - Tell me about electricity import by CEB
+    - How does CEB import electricity?
+    - What is CEB's electricity import process?
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+
+- intent: ask_name
+  examples: |
+    - What is your name?
+    - Can you tell me your name?
+    - May I know your name?
+    - Name, please?
+    
+
+
